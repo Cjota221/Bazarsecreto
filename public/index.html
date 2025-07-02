@@ -25,25 +25,26 @@
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #fff;
+            background: #000;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: #1a1a1a;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             border-radius: 15px;
             margin-top: 20px;
             margin-bottom: 20px;
+            border: 2px solid #8B1538;
         }
 
         /* Header */
         .header {
             text-align: center;
-            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            background: linear-gradient(135deg, #8B1538 0%, #D97706 100%);
             color: white;
             padding: 40px 20px;
             border-radius: 15px;
@@ -91,7 +92,7 @@
             text-align: center;
             margin: 40px 0;
             padding: 40px 30px;
-            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            background: linear-gradient(135deg, #8B1538 0%, #D97706 100%);
             border-radius: 15px;
             position: relative;
             overflow: hidden;
@@ -116,7 +117,7 @@
         .main-cta-button {
             display: inline-block;
             background: white;
-            color: #DB1472;
+            color: #8B1538;
             padding: 25px 50px;
             border-radius: 50px;
             text-decoration: none;
@@ -135,20 +136,20 @@
         @keyframes blink {
             0%, 50% { 
                 background: white;
-                color: #DB1472;
-                box-shadow: 0 8px 25px rgba(219, 20, 114, 0.4);
+                color: #8B1538;
+                box-shadow: 0 8px 25px rgba(139, 21, 56, 0.4);
                 transform: scale(1);
             }
             25%, 75% { 
-                background: #F8B81F;
+                background: #D97706;
                 color: white;
-                box-shadow: 0 12px 35px rgba(248, 184, 31, 0.6);
+                box-shadow: 0 12px 35px rgba(217, 119, 6, 0.6);
                 transform: scale(1.05);
             }
         }
 
         .main-cta-button:hover {
-            background: #DB1472;
+            background: #8B1538;
             color: white;
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 15px 35px rgba(0,0,0,0.3);
@@ -168,15 +169,15 @@
         .size-section {
             margin: 40px 0;
             padding: 30px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
             border-radius: 15px;
-            border: 2px solid #DB1472;
+            border: 2px solid #8B1538;
         }
 
         .size-title {
             text-align: center;
             font-size: 1.8em;
-            color: #DB1472;
+            color: #D97706;
             margin-bottom: 30px;
             font-weight: bold;
         }
@@ -193,7 +194,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #F8B81F 0%, #DB1472 100%);
+            background: linear-gradient(135deg, #D97706 0%, #8B1538 100%);
             color: white;
             padding: 20px;
             border-radius: 15px;
@@ -215,7 +216,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            background: linear-gradient(135deg, #8B1538 0%, #D97706 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
             border-radius: 12px;
@@ -228,8 +229,8 @@
 
         .size-button:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(219, 20, 114, 0.3);
-            border-color: #DB1472;
+            box-shadow: 0 10px 25px rgba(139, 21, 56, 0.3);
+            border-color: #8B1538;
         }
 
         .size-button:hover::before {
@@ -240,14 +241,14 @@
         .info-section {
             margin: 40px 0;
             padding: 30px;
-            background: white;
+            background: #2a2a2a;
             border-radius: 15px;
-            border: 2px solid #F8B81F;
+            border: 2px solid #D97706;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .info-title {
-            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            background: linear-gradient(135deg, #8B1538 0%, #D97706 100%);
             color: white;
             padding: 20px;
             border-radius: 10px;
@@ -258,8 +259,8 @@
         }
 
         .info-item {
-            background: #f8f9fa;
-            border-left: 5px solid #DB1472;
+            background: #1a1a1a;
+            border-left: 5px solid #8B1538;
             padding: 20px;
             margin-bottom: 15px;
             border-radius: 0 10px 10px 0;
@@ -267,18 +268,18 @@
         }
 
         .info-item:hover {
-            background: #e9ecef;
+            background: #333;
         }
 
         .info-highlight {
             font-weight: bold;
-            color: #DB1472;
+            color: #D97706;
             font-size: 1.1em;
             margin-bottom: 10px;
         }
 
         .info-text {
-            color: #555;
+            color: #ccc;
             line-height: 1.6;
         }
 

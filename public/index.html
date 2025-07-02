@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 O BAZAR SECRETO CJ FOI LIBERADO!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+        }
+
+        .header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+        }
+
+        /* Main CTA Button */
+        .main-cta {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px 30px;
+            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: slide 2s infinite;
+        }
+
+        @keyframes slide {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .main-cta-button {
+            display: inline-block;
+            background: white;
+            color: #DB1472;
+            padding: 25px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.4em;
+            transition: all 0.3s ease;
+            border: 3px solid white;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { 
+                background: white;
+                color: #DB1472;
+                box-shadow: 0 8px 25px rgba(219, 20, 114, 0.4);
+                transform: scale(1);
+            }
+            25%, 75% { 
+                background: #F8B81F;
+                color: white;
+                box-shadow: 0 12px 35px rgba(248, 184, 31, 0.6);
+                transform: scale(1.05);
+            }
+        }
+
+        .main-cta-button:hover {
+            background: #DB1472;
+            color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            animation: none;
+        }
+
+        .main-cta-text {
+            color: white;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+        }
+
+        /* Size Selection Section */
+        .size-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            border: 2px solid #DB1472;
+        }
+
+        .size-title {
+            text-align: center;
+            font-size: 1.8em;
+            color: #DB1472;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .size-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .size-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #F8B81F 0%, #DB1472 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+            min-height: 70px;
+        }
+
+        .size-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 12px;
+        }
+
+        .size-button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .size-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(219, 20, 114, 0.3);
+            border-color: #DB1472;
+        }
+
+        .size-button:hover::before {
+            opacity: 1;
+        }
+
+        /* Info Section */
+        .info-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            border: 2px solid #F8B81F;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .info-title {
+            background: linear-gradient(135deg, #DB1472 0%, #F8B81F 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            border-left: 5px solid #DB1472;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 0 10px 10px 0;
+            transition: background 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #e9ecef;
+        }
+
+        .info-highlight {
+            font-weight: bold;
+            color: #DB1472;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .info-text {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 5px;
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header .subtitle {
+                font-size: 1.2em;
+            }
+
+            .main-cta-button {
+                padding: 20px 35px;
+                font-size: 1.2em;
+            }
+
+            .size-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .size-button {
+                padding: 18px;
+                font-size: 1.2em;
+                min-height: 60px;
+            }
+
+            .size-title {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 2px;
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 15px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header .subtitle {
+                font-size: 1.1em;
+            }
+
+            .main-cta-button {
+                padding: 18px 30px;
+                font-size: 1.1em;
+            }
+
+            .size-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .size-button {
+                padding: 15px;
+                font-size: 1.1em;
+                min-height: 55px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .header::before,
+            .main-cta::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎉 O BAZAR SECRETO CJ FOI LIBERADO!</h1>
+            <div class="subtitle">Desconto de até 90% - Somente por 24 horas!</div>
+            <div style="margin-top: 15px; font-size: 1.2em; position: relative; z-index: 1; font-weight: 600;">
+                Acesse agora e garanta suas peças com preços incríveis!
+            </div>
+        </div>
+
+        <!-- Main CTA Section -->
+        <div class="main-cta">
+            <div class="main-cta-text">
+                🛍️ Clique no botão abaixo e entre direto no bazar:
+            </div>
+            <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687" class="main-cta-button" target="_blank">
+                CLIQUE AQUI E ENTRE NO BAZAR AGORA
+            </a>
+        </div>
+
+        <!-- Size Selection Section -->
+        <div class="size-section">
+            <h2 class="size-title">👇 Quer ir direto pro seu número? Compre por numeração:</h2>
+            <div class="size-grid">
+                <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687?variacoes=850309,1279804,1279840,1279915,1584699,1584705,1584735" class="size-button" target="_blank">
+                    <span>34</span>
+                </a>
+                <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687?variacoes=850311,1016940,1017046,1279805,1279916,1584700,1584706,1584718,1584724,1584736,1584742,1584754,1584760,1584766" class="size-button" target="_blank">
+                    <span>35</span>
+                </a>
+                <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687?variacoes=850313,1016942,1279917,1584761,1584767" class="size-button" target="_blank">
+                    <span>36</span>
+                </a>
+                <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687?variacoes=850315,1279801,1279807,1279843,1279861,1279918,1584732,1584744" class="size-button" target="_blank">
+                    <span>37</span>
+                </a>
+                <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687?variacoes=850317,1016958,1017052,1019646,1279862,1279919" class="size-button" target="_blank">
+                    <span>38</span>
+                </a>
+                <a href="https://cjotarasteirinhas.com.br/c/atacadosortido/categoria/285843/62981480687?variacoes=850319,906072,1016948,1017054,1019648,1279920" class="size-button" target="_blank">
+                    <span>39</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <div class="info-title">📱 INFORMAÇÕES IMPORTANTES</div>
+            
+            <div class="info-item">
+                <div class="info-highlight">⚡ Apenas 24 horas de duração</div>
+                <div class="info-text">O bazar encerra no mesmo dia, então não perca tempo!</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-highlight">🛍️ Pedido mínimo de 5 peças</div>
+                <div class="info-text">Compra no atacado para revenda - você pode sortir modelos, cores e tamanhos.</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-highlight">💰 Descontos de até 88% OFF</div>
+                <div class="info-text">Peças a partir de R$4,99 - queima de estoque real!</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-highlight">💳 Formas de pagamento</div>
+                <div class="info-text">Pix e cartão de crédito (em até 12x). Pagamento deve ser feito em até 1 hora após o pedido.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
